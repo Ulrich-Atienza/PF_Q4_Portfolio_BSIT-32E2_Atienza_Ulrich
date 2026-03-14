@@ -3,16 +3,16 @@
   "homepage": "https://Ulrich-Atienza.github.io/PF_Q4_Portfolio_BSIT-32E2_Atienza_Ulrich",
   "private": true,
   "version": "0.0.0",
-  "type": "module",  
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "build:local": "set VITE_BASE_URL=/ && vite build",
     "build:gh": "set VITE_BASE_URL=/PF_Q4_Portfolio_BSIT-32E2_Atienza_Ulrich/ && vite build",
-    "predeploy": "npm run build",    
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
-},
+  },
   "dependencies": {
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
