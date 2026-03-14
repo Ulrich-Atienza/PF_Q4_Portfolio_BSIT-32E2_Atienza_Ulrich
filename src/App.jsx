@@ -1,3 +1,4 @@
+/*
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -17,4 +18,7 @@ function App() {
   );
 }
 
-export default App;
+export default App;*/
+export default function App() {
+  return <h1>Hello World</h1>;
+}

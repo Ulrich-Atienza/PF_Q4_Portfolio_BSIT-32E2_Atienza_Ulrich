@@ -1,13 +1,16 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { HashRouter } from 'react-router-dom';  // <-- import HashRouter
-import './index.css';
+import { HashRouter } from 'react-router-dom';
 import App from './App.jsx';
+import ErrorBoundary from './ErrorBoundary.jsx';
+import './index.css';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <HashRouter>   {/* <-- wrap your App here */}
-      <App />
+    <HashRouter>
+      <ErrorBoundary>
+        <App />
+      </ErrorBoundary>
     </HashRouter>
   </StrictMode>,
 );
